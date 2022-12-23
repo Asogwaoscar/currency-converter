@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./img/logo shortcut.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+</head>
+
+<body onload="initClock()">
+    <section>
+        <!-- Creating the mother div -->
+        <div class="currency">
+            <!-- creating the company's logo and the appearance mode switch  -->
+            <div class="nav">
+        
+                    <a href="Index.html"><img src="img/my logo.png" style="width: 40%;" alt=""></a>
+            
+                <div class="datetime">
+                    <div class="date">
+                         <span id="dayname">Day</span>
+                        <span id="month">Month</span>
+                        <span id="daynum">00</span>
+                        <span id="year">Year</span>
+                    </div>
+                    <div class="time">
+                        <span id="hour">00</span>:
+                        <span id="minutes">00</span>:
+                        <span id="seconds">00</span>
+                        <span id="period">AM</span>
+                    </div>
+                </div>
+                
+                    <img src="img/moon-fill.png" id="icon" style="width: 50%; height: 40%;" alt="">
+                
+            </div>
+
+            <!-- Header section -->
+            <header>Get Your Exchange Rates !!</header>
+            <form action="">
+                <div class="amount">
+                    <p>Enter Amount</p>
+                    <input type="text" value="1">
+                </div>
+                <!-- creating the select option that contains all countries currency and flags  -->
+                <div class="drop-list">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="select-box">
+                            <img src="https://flagsapi.com/NG/flat/64.png">
+                            <select></select>
+                        </div>
+                    </div>
+                    <!-- creating the arrow exchange icon -->
+                    <div class="icon"><i class="ri-arrow-left-right-line"></i></div>
+                    <div class="to">
+                        <P>To</P>
+                        <div class="select-box">
+                            <img src="https://flagsapi.com/GH/flat/64.png">
+                            <select></select>
+                        </div>
+                    </div>
+                </div>
+                <!-- creating the result for every exchange rate generated -->
+                <div class="exchange-rate">1 NGN = 0.0293094 GHS </div>
+
+                <!-- creating the button for entering the command -->
+                <button>Get Exchange Rate</button>
+                <div class="calc">
+                    <a href="calc.html">Having network error?, if yes...👉 <img src="img/calc.png"
+                            style="width:25px ; height: 35px" alt=""></a>
+                </div>
+            </form>
+            <!-- footer -->
+            <footer>
+                <div class="copy">
+                    &copy; Copyright 2022 Currency Converter App &#x1F4B1; by Oscar.
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script src="country-list.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
